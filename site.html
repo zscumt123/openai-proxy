@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"
+    integrity="sha512-bgHRAiTjGrzHzLyKOnpFvaEpGzJet3z4tZnXGjpsCcqOnAH6VGUx9frc5bcIhKTVLEiCO6vEhNAgx5jtLUYrfA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/a11y-dark.min.css"
+    integrity="sha512-Vj6gPCk8EZlqnoveEyuGyYaWZ1+jyjMPg8g4shwyyNlRQl6d3L9At02ZHQr5K6s5duZl/+YKMnM3/8pDhoUphg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <style>
+    .code {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header></header>
+  <div class="code">
+    <div>
+      <pre><code class="language-javascript">
+        npm install openai
+      </code></pre>
+    </div>
+    <div>
+      <pre><code class="language-javascript">
+        import { Configuration, OpenAIApi } from "openai";
+
+        const configuration = new Configuration({
+          apiKey: process.env.OPENAI_API_KEY,
+          +  basePath: "https://closeai.deno.dev/v1"
+        });
+      </code></pre>
+    </div>
+
+  </div>
+
+  <script>
+    hljs.highlightAll()
+  </script>
+</body>
+
+</html>
